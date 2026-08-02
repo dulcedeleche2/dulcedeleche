@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>*:.｡. dulce de leche .｡.:*</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<marquee behavior="scroll" direction="left">welcome to my little scrapbook of a website ✿ new pages added often ✿ thanks for visiting ✿ check out my interests below ✿ sending u hugs ✿</marquee>
+
+<div class="page">
+
+  <header class="site-header">
+    <div class="tape"></div>
+    <h1><a href="index.html">dulce de leche</a></h1>
+    <p class="blink-line">a sweet lil journal <span class="blink">_</span></p>
+  </header>
+
+  <nav>
+    <a href="index.html" class="active">☆ home</a>
+    <a href="about.html">☆ about</a>
+    <a href="journal.html">☆ journal</a>
+    <a href="shop.html">☆ shop</a>
+    <a href="faq.html">☆ faq</a>
+    <a href="interests.html">☆ interests</a>
+  </nav>
+
+  <div class="blinkie-row">
+    <div class="blinkie">welcome to my site!</div>
+    <div class="blinkie">best friends 4ever</div>
+    <div class="blinkie">100% kawaii</div>
+  </div>
+
+  <div class="badge-row">
+    <div class="badge">made w/<br>love</div>
+    <div class="badge">best viewed<br>cozy</div>
+    <div class="badge">100%<br>homemade</div>
+    <div class="badge">sanrio<br>fan</div>
+  </div>
+
+  <div class="widget-row">
+    <div class="widget">
+      <h3>NOW PLAYING</h3>
+      <div class="now-playing">
+        <span class="icon">📼</span>
+        <div>
+          <p style="font-weight:bold;">sugar rush lofi mix</p>
+          <div class="bars"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="widget blue">
+      <h3>CURRENT MOOD</h3>
+      <div class="mood-widget">
+        <div class="mood-face">(*ᴗ͈ˬᴗ͈)</div>
+        <p>feeling sweet & sleepy today ✿</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry tilt-l" style="position:relative;">
+    <div class="tape"></div>
+    <span class="entry-tag">welcome</span>
+    <h2>hihi, come on in!</h2>
+    <p>this is my little scrapbook-style spot on the internet — part diary, part sketchbook, part somewhere to keep track of recipes and lil projects. click around using the tabs up top: read my <a href="journal.html">journal</a>, learn more <a href="about.html">about me</a>, or peek at the <a href="shop.html">shop</a> that's brewing!</p>
+  </div>
+
+  <div class="doodles">✿ ⋆ ˚｡ ✿ ⋆ ˚｡ ✿</div>
+
+  <div class="button-strip">
+    <a href="#" class="btn88">friend's<br>site here</a>
+    <a href="#" class="btn88">neocities</a>
+    <a href="#" class="btn88">webring</a>
+    <a href="shop.html" class="btn88">my<br>shop</a>
+  </div>
+
+  <div class="counter">visitor no. <span>000042</span></div>
+
+  <footer>made with <span class="heart">♡</span> by dulcedeleche2, since 2026</footer>
+
+</div>
+
+</body>
+</html>
