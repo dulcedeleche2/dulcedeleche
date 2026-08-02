@@ -30,9 +30,9 @@ marquee{
 }
 
 .page{
-  max-width:1050px;
+  max-width:1150px;
   margin:20px auto 60px;
-  background:#fffdf8;
+  background:#fff;
   box-shadow:0 6px 24px rgba(120,100,70,0.18);
   padding:44px 6vw 40px;
   position:relative;
