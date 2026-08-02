@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>*:.｡. dulce de leche .｡.:*</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Patrick+Hand&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{
+    cursor:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><text y="20" font-size="20">%E2%98%86</text></svg>') 10 10, auto;
+  }
+  body{
+    font-family:'Patrick Hand',cursive;
+    font-size:19px;
+    color:#4e4237;
+    background-color:#fff;
+    background-image:radial-gradient(circle, #f6c3d8 5px, transparent 5px);
+    background-size:34px 34px;
+    background-position:0 0;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  a{color:#c9668a;}
+  a:hover{color:#5f9fd6;}
+
+  marquee{
+    background:#4e4237;
+    color:#fbeef2;
+    font-family:'Press Start 2P',monospace;
+    font-size:11px;
+    padding:9px 0;
+    border-top:4px dashed #b9dcf0;
+    border-bottom:4px dashed #f3c9d7;
+    position:relative;
+    z-index:2;
+  }
+
+  .page{
+    max-width:800px;
+    margin:20px auto 60px;
+    background:#fffdf8;
+    box-shadow:0 6px 24px rgba(120,100,70,0.18);
+    padding:44px 6vw 40px;
+    position:relative;
+    border:1px solid #ecdfc8;
+    z-index:2;
+  }
+
+  .tape{
+    position:absolute;
+    height:34px;
+    opacity:.8;
+    background:repeating-linear-gradient(135deg,#f6b6cf,#f6b6cf 6px,#fbd7e3 6px,#fbd7e3 12px);
+    box-shadow:0 2px 4px rgba(0,0,0,0.08);
+  }
+  .tape-blue{background:repeating-linear-gradient(135deg,#b9dcf0,#b9dcf0 6px,#dcedf8 6px,#dcedf8 12px);}
+  .tape-yellow{background:repeating-linear-gradient(135deg,#f3dd9a,#f3dd9a 6px,#f9ecc7 6px,#f9ecc7 12px);}
+
+  header{text-align:center;margin-bottom:18px;position:relative;}
+  header .tape{width:150px;top:-24px;left:calc(50% - 75px);transform:rotate(-3deg);}
+  header h1{
+    font-family:'Caveat',cursive;
+    font-weight:700;
+    font-size:52px;
+    color:#c9668a;
+    transform:rotate(-1deg);
+  }
+  header p.blink-line{
+    font-family:'Press Start 2P',monospace;
+    font-size:10px;
+    color:#5f9fd6;
+    margin-top:6px;
+  }
+  .blink{animation:blink 1s step-start infinite;}
+  @keyframes blink{50%{opacity:0;}}
+
+  nav{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:20px 0 20px;
+  }
+  nav a{
+    font-family:'Press Start 2P',monospace;
+    font-size:10px;
+    color:#5a4a52;
+    background:#fff;
+    border:2px solid #f3c9d7;
+    padding:9px 14px;
+    text-decoration:none;
+  }
+  nav a:nth-child(3n){border-color:#b9dcf0;}
+  nav a:hover{background:#f3c9d7;color:#4e4237;}
+
+  /* blinkie strip */
+  .blinkie-row{
+    display:flex;
+    justify-content:center;
+    gap:6px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+  }
+  .blinkie{
+    width:150px;height:20px;
+    font-family:'Press Start 2P',monospace;
+    font-size:7px;
+    color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    border:1px solid #4e4237;
+    animation:blinkcolor 1.6s steps(1) infinite;
+  }
+  @keyframes blinkcolor{
+    0%,49%{background:#c9668a;}
+    50%,100%{background:#5f9fd6;}
+  }
+
+  .badge-row{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+  }
+  .badge{
+    width:80px;height:28px;
+    background:#4e4237;
+    color:#fff;
+    font-family:'Press Start 2P',monospace;
+    font-size:7px;
+    display:flex;align-items:center;justify-content:center;
+    text-align:center;
+    border:1px solid #fff;
+  }
+  .badge:nth-child(2){background:#f3c9d7;color:#4e4237;}
+  .badge:nth-child(3){background:#b9dcf0;color:#213a4f;}
+  .badge:nth-child(4){background:#f3dd9a;color:#4e4237;}
+
+  /* widgets row */
+  .widget-row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:16px;
+    margin-bottom:34px;
+  }
+  .widget{
+    background:#fff;
+    border:2px solid #f3c9d7;
+    border-radius:12px;
+    padding:14px 16px;
+  }
+  .widget.blue{border-color:#b9dcf0;}
+  .widget h3{
+    font-family:'Press Start 2P',monospace;
+    font-size:9px;
+    color:#c9668a;
+    margin-bottom:8px;
+  }
+  .widget.blue h3{color:#5f9fd6;}
+  .widget p{font-size:14.5px;line-height:1.4;}
+  .now-playing{display:flex;align-items:center;gap:10px;}
+  .now-playing .icon{font-size:24px;}
+  .now-playing .bars{display:flex;gap:2px;align-items:flex-end;height:16px;}
+  .now-playing .bars span{
+    width:3px;background:#5f9fd6;
+    animation:eq 1s ease-in-out infinite;
+  }
+  .now-playing .bars span:nth-child(1){height:6px;animation-delay:0s;}
+  .now-playing .bars span:nth-child(2){height:14px;animation-delay:.2s;}
+  .now-playing .bars span:nth-child(3){height:9px;animation-delay:.4s;}
+  .now-playing .bars span:nth-child(4){height:12px;animation-delay:.1s;}
+  @keyframes eq{0%,100%{transform:scaleY(.5);}50%{transform:scaleY(1);}}
+
+  .mood-widget{display:flex;align-items:center;gap:10px;}
+  .mood-face{
+    width:36px;height:36px;border-radius:50%;
+    background:#f3dd9a;
+    display:flex;align-items:center;justify-content:center;
+    font-size:18px;
+    flex-shrink:0;
+  }
+
+  .entry{
+    position:relative;
+    margin-bottom:50px;
+    padding:24px 22px;
+    background:#fffefb;
+    border:1px solid #ecdfc8;
+    box-shadow:2px 3px 10px rgba(120,100,70,0.10);
+  }
+  .entry:nth-child(odd){transform:rotate(-0.5deg);}
+  .entry:nth-child(even){transform:rotate(0.5deg);}
+  .entry .tape{width:100px;top:-16px;}
+  .entry.about .tape{left:26px;transform:rotate(-4deg);}
+  .entry.posts .tape{right:26px;transform:rotate(3deg);}
+  .entry.shop .tape{left:calc(50% - 50px);transform:rotate(-2deg);}
+  .entry.faq .tape{right:calc(50% - 50px);transform:rotate(2deg);}
+  .entry.interests .tape{left:26px;transform:rotate(3deg);}
+
+  .entry-tag{
+    display:inline-block;
+    font-family:'Press Start 2P',monospace;
+    font-size:8px;
+    background:#4e4237;
+    color:#fff;
+    padding:4px 8px;
+    margin-bottom:12px;
+  }
+  .entry h2{font-family:'Caveat',cursive;font-size:30px;color:#c9668a;margin-bottom:10px;}
+  .entry p{line-height:1.6;font-size:19px;}
+
+  .polaroid-row{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+  .polaroid{background:#fff;padding:10px 10px 24px;box-shadow:0 4px 10px rgba(0,0,0,0.15);transform:rotate(-3deg);flex-shrink:0;}
+  .polaroid .square{
+    width:110px;height:110px;
+    background:repeating-conic-gradient(#b9dcf0 0% 25%, #f3c9d7 0% 50%);
+    display:flex;align-items:center;justify-content:center;font-size:38px;
+  }
+  .polaroid figcaption{text-align:center;font-family:'Caveat',cursive;font-size:15px;margin-top:6px;color:#8a7a63;}
+
+  .posts-list{list-style:none;}
+  .posts-list li{padding:8px 0;border-bottom:1px dashed #ecdfc8;}
+  .posts-list li:last-child{border-bottom:none;}
+  .posts-list .ptitle{font-size:20px;font-weight:bold;color:#4e4237;}
+  .posts-list .pdate{font-family:'Press Start 2P',monospace;font-size:8px;color:#5f9fd6;display:block;margin-top:2px;}
+
+  .postit-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-top:10px;}
+  .postit{background:#f3dd9a;padding:14px;box-shadow:2px 3px 8px rgba(0,0,0,0.12);font-size:15.5px;}
+  .postit:nth-child(2){background:#b9dcf0;transform:rotate(1.5deg);}
+  .postit:nth-child(3){background:#fbd7e3;transform:rotate(-1.5deg);}
+  .postit strong{font-family:'Caveat',cursive;font-size:19px;display:block;margin-bottom:4px;}
+
+  .stamp{
+    display:inline-block;font-family:'Press Start 2P',monospace;font-size:9px;
+    color:#5f9fd6;border:2px dashed #5f9fd6;padding:6px 12px;
+    transform:rotate(-3deg);margin-top:14px;
+  }
+
+  .button-strip{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:10px 0 30px;}
+  .button-strip .btn88{
+    width:88px;height:31px;background:#4e4237;color:#fbeef2;
+    font-family:'Press Start 2P',monospace;font-size:7px;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    border:1px solid #fff;text-decoration:none;line-height:1.3;
+  }
+  .button-strip .btn88:nth-child(2n){background:#f3c9d7;color:#4e4237;}
+  .button-strip .btn88:nth-child(3n){background:#b9dcf0;color:#213a4f;}
+
+  .doodles{text-align:center;font-size:20px;color:#e0c8a0;margin:30px 0;letter-spacing:12px;}
+
+  .counter{text-align:center;margin-bottom:24px;}
+  .counter span{
+    font-family:'Press Start 2P',monospace;background:#4e4237;color:#fbeef2;
+    padding:6px 10px;letter-spacing:3px;font-size:12px;
+  }
+
+  footer{text-align:center;font-family:'Caveat',cursive;font-size:20px;color:#a8905e;position:relative;z-index:2;}
+  footer .heart{color:#5f9fd6;}
+
+  @media(max-width:600px){
+    header h1{font-size:38px;}
+    .polaroid-row{justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<marquee behavior="scroll" direction="left">welcome to my little scrapbook of a website ✿ new pages added often ✿ thanks for visiting ✿ check out my interests below ✿ sending u hugs ✿</marquee>
+
+<div class="page">
+
+  <header>
+    <div class="tape"></div>
+    <h1>dulce de leche</h1>
+    <p class="blink-line">a sweet lil journal <span class="blink">_</span></p>
+  </header>
+
+  <nav>
+    <a href="#about">☆ about</a>
+    <a href="#posts">☆ journal</a>
+    <a href="#shop">☆ shop</a>
+    <a href="#faq">☆ faq</a>
+    <a href="#interests">☆ interests</a>
+  </nav>
+
+  <div class="blinkie-row">
+    <div class="blinkie">welcome to my site!</div>
+    <div class="blinkie">best friends 4ever</div>
+    <div class="blinkie">100% kawaii</div>
+  </div>
+
+  <div class="badge-row">
+    <div class="badge">made w/<br>love</div>
+    <div class="badge">best viewed<br>cozy</div>
+    <div class="badge">100%<br>homemade</div>
+    <div class="badge">sanrio<br>fan</div>
+  </div>
+
+  <div class="widget-row">
+    <div class="widget">
+      <h3>NOW PLAYING</h3>
+      <div class="now-playing">
+        <span class="icon">📼</span>
+        <div>
+          <p style="font-weight:bold;">indie pop rock</p>
+          <div class="bars"><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="widget blue">
+      <h3>CURRENT MOOD</h3>
+      <div class="mood-widget">
+        <div class="mood-face">(*ᴗ͈ˬᴗ͈)</div>
+        <p>feeling innovative & sleepy today ✿</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="entry about" id="about">
+    <div class="tape"></div>
+    <span class="entry-tag">page 01</span>
+    <h2>hi, it's me!</h2>
+    <div class="polaroid-row">
+      <figure class="polaroid">
+        <div class="square">🍮</div>
+        <figcaption>me, probably baking</figcaption>
+      </figure>
+      <p>this is my little scrapbook-style spot on the internet — part diary, part sketchbook, part somewhere to keep track of recipes and lil projects. still filling in the pages, so thanks for visiting while it's messy!</p>
+    </div>
+  </div>
+
+  <div class="entry posts" id="posts">
+    <div class="tape tape-blue"></div>
+    <span class="entry-tag">journal entries</span>
+    <h2>latest pages</h2>
+    <ul class="posts-list">
+      <li><span class="ptitle">hello world!! ✨</span><span class="pdate">07.28.2026</span></li>
+      <li><span class="ptitle">a recipe i keep coming back to</span><span class="pdate">coming soon</span></li>
+      <li><span class="ptitle">what i've been working on</span><span class="pdate">coming soon</span></li>
+    </ul>
+  </div>
+
+  <div class="entry shop" id="shop">
+    <div class="tape tape-yellow"></div>
+    <span class="entry-tag">a lil secret</span>
+    <h2>the shop (shh, coming soon)</h2>
+    <div class="postit-grid">
+      <div class="postit"><strong>step 1</strong>testing recipes + ideas</div>
+      <div class="postit"><strong>step 2</strong>figuring out orders</div>
+      <div class="postit"><strong>step 3</strong>opening it up to you!!</div>
+    </div>
+    <span class="stamp">under construction</span>
+  </div>
+
+  <div class="entry faq" id="faq">
+    <div class="tape"></div>
+    <span class="entry-tag">faq (sort of)</span>
+    <h2>a few questions</h2>
+    <p><strong>why'd you make this?</strong> wanted a little creative outlet that's just mine.</p>
+    <p style="margin-top:8px;"><strong>what's the theme?</strong> still figuring it out — sweet treats + cozy stuff for now.</p>
+  </div>
+
+  <div class="entry interests" id="interests">
+    <div class="tape tape-blue"></div>
+    <span class="entry-tag">page 02</span>
+    <h2>things i like</h2>
+    <div class="postit-grid">
+      <div class="postit"><strong>baking ♡</strong>anything with dulce de leche in it, honestly</div>
+      <div class="postit"><strong>cozy shows</strong>background noise while i putter around</div>
+      <div class="postit"><strong>collecting</strong>cute stationery + little trinkets</div>
+    </div>
+  </div>
+
+  <div class="doodles">✿ ⋆ ˚｡ ✿ ⋆ ˚｡ ✿</div>
+
+  <div class="button-strip">
+    <a href="#" class="btn88">friend's<br>site here</a>
+    <a href="#" class="btn88">neocities</a>
+    <a href="#" class="btn88">webring</a>
+    <a href="#" class="btn88">my<br>shop</a>
+  </div>
+
+  <div class="counter">visitor no. <span>000042</span></div>
+
+  <footer>made with <span class="heart">♡</span> by dulcedeleche2, since 2026</footer>
+
+</div>
+
+</body>
+</html>
